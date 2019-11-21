@@ -1,0 +1,50 @@
+body {
+    background-image: url("pictures/wildwest3.jpg");
+}
+.my-container {
+    margin-top: 200px;
+}
+
+.my-row1 {
+text-align: center;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+    background-color: darkslategrey;
+}
+.my-row2 {
+    height: 50px;
+
+}
+
+.my-col{
+    border: 10px solid black;
+}
+.my-col2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.my-btn-group {
+    margin-top: 4px;
+    
+}
+
+.actionButtons {
+    height: 50px;
+    width: 50x;
+    margin-left: 0;
+}
+ .actionPictures {
+     height: 300px;
+     width: 500px;
+     margin-left: 2%;
+     margin-right: 5%;
+ }
+ img {
+     height: 250px;
+     width: 500px;
+ }
+
+
+
