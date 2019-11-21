@@ -99,13 +99,15 @@ function gameEnd(winner)
    document.getElementById("loadbutton").disabled = true;
    document.getElementById("shootbutton").disabled = true;
    document.getElementById("shotgunbutton").disabled = true;
+   setTimeout
    if(winner != "draw")
    {
-    alert("The game ended with " + winner + " winning the game!!");
+    setTimeout(function(){ alert("The game ended with " + winner + " winning the game!!"); }, 3000);
    }
    else
    {
-    alert("The game ended with a draw!!");
+    setTimeout(function(){ alert("The game ended with a draw!!"); }, 3000);
+    
    }
    
    
