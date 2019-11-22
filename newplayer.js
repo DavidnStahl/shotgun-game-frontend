@@ -14,6 +14,8 @@ class NewPlayer {
         
         let div = document.getElementById("actionPlayer");
         div.appendChild(elem);
+        let div2 = document.getElementById("playerText");
+        setTimeout(function(){ div2.innerHTML = action; }, 100);
         
        }
        else
@@ -21,7 +23,8 @@ class NewPlayer {
           
           let div = document.getElementById("actionPlayer");
           div.removeChild(document.getElementById("ImgPlayer"));
-          
+          let div2 = document.getElementById("playerText");
+          div2.innerHTML = ""; 
           let elem = document.createElement("img");
           elem.setAttribute("src", "pictures/" + action + ".gif");
           elem.setAttribute("alt", action);
@@ -29,6 +32,7 @@ class NewPlayer {
           
           let div1 = document.getElementById("actionPlayer");
           div1.appendChild(elem);
+          setTimeout(function(){ div2.innerHTML = action; }, 100);
           
        }
     }

@@ -12,21 +12,28 @@ class Ai {
          elem.setAttribute("alt", action);
          elem.setAttribute("id", "ImgComputer");
          
-         let div = document.getElementById("actionComputer");
+         let div = document.getElementById("actionComputer"); 
+         let div2 = document.getElementById("computerText");       
          div.appendChild(elem);
+         setTimeout(function(){ div2.innerHTML = action; }, 100);
+
+
          
         }
         else
         {
             
            let div = document.getElementById("actionComputer");
-           div.removeChild(document.getElementById("ImgComputer"));         
+           div.removeChild(document.getElementById("ImgComputer"));
+           let div2 = document.getElementById("computerText");
+           div2.innerHTML = "";         
            let elem = document.createElement("img");
            elem.setAttribute("src", "pictures/" + action + ".gif");
            elem.setAttribute("alt", action);
            elem.setAttribute("id", "ImgComputer");
            let div1 = document.getElementById("actionComputer");
            div1.appendChild(elem);
+           setTimeout(function(){ div2.innerHTML = action; }, 100);
            
            
         } 

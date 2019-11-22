@@ -14,6 +14,8 @@ function startGame()
     {
         let div = document.getElementById("actionPlayer");
         div.removeChild(document.getElementById("ImgPlayer"));
+        let div2 = document.getElementById("playerText");
+        div2.innerHTML = "";
     }
     
 
@@ -25,11 +27,13 @@ function startGame()
     {
         let div = document.getElementById("actionComputer");
         div.removeChild(document.getElementById("ImgComputer"));
+        let div2 = document.getElementById("computerText");
+        div2.innerHTML = "";
     }
-   
-   resetShoots();
-   alert("Game have now started! you can now use block and load actions");
-   makeButtonsAvaible();
+    
+    resetShoots();
+    alert("Game have now started! you can now use block and load actions");
+    makeButtonsAvaible();
 
 }
 function shotgun()
@@ -102,11 +106,11 @@ function gameEnd(winner)
    setTimeout
    if(winner != "draw")
    {
-    setTimeout(function(){ alert("The game ended with " + winner + " winning the game!!"); }, 3000);
+    setTimeout(function(){ alert("The game ended with " + winner + " winning the game!!"); }, 500);
    }
    else
    {
-    setTimeout(function(){ alert("The game ended with a draw!!"); }, 3000);
+    setTimeout(function(){ alert("The game ended with a draw!!"); }, 800);
     
    }
    

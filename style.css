@@ -7,7 +7,7 @@ body {
 
 .my-row1 {
 text-align: center;
-    height: 400px;
+    height: 420px;
     color: white;
     font-size: 20px;
     background-color: darkslategrey;
@@ -20,6 +20,8 @@ text-align: center;
 
 .my-col{
     border: 10px solid black;
+    background-color: darkslategrey
+
 }
 .my-col2 {
     text-align: center;
@@ -45,9 +47,17 @@ text-align: center;
  }
 
  img {
-     height: 250px;
-     width: 500px;
+    height: 300px;
+    width: 400px;
+    
  }
+
+ @media (max-width: 800px) {
+    img{
+        height: 300px;
+        width: 350px;
+    }
+  }
 
 
 
